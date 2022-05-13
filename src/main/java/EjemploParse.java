@@ -61,14 +61,13 @@ public class EjemploParse {
         }
         JSONArray arrayPrueba = je.getJSONArray("posts");
         for (int i = 0; i < arrayPrueba.length(); i++) {
-            for (int j = 0; j < je.getJSONArray("comments").length(); j++) {
-                JSONArray comments = arrayPrueba.getJSONObject(j).getJSONArray("comments");
+                JSONArray comments = arrayPrueba.getJSONObject(i).getJSONArray("comments");
                 System.out.println(comments);
             }
         }
     }
 
-}
+
 
 
 
